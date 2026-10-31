@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PesaTrack | Create Account</title>
+    <link rel="stylesheet" href="createAccount.css">
+</head>
+
+<body>
+<header>
+    <img src="logo.png" alt="">
+    <nav>
+        <ul>
+            <li><a href="">Features</a></li>
+            <li><a href="">How it works</a></li>
+            <li><a href="">Benefits</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
+    <button class="btnn" id="backHome">Back to home</button>
+    
+</header>
+
+    <!-- MAIN SECTION -->
+
+    <main class="main-section">
+
+
+        <!-- LEFT BRANDING SECTION -->
+
+        <section class="branding-section">
+
+            <h1>
+                Take Control of Your Finances
+            </h1>
+
+            <p>
+                Join PesaTrack today and start tracking your
+                expenses, managing your budgets and building
+                a better financial future.
+            </p>
+
+
+            <div class="benefits">
+
+                <div class="benefit">
+
+                    <div class="benefit-icon">📊</div>
+
+                    <div class="benefit-text">
+
+                        <h3>Track Expenses</h3>
+
+                        <p>
+                            Monitor and organize your daily spending.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="benefit">
+
+                    <div class="benefit-icon">💰</div>
+
+                    <div class="benefit-text">
+
+                        <h3>Plan Budgets</h3>
+
+                        <p>
+                            Create budgets and manage your money.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="benefit">
+
+                    <div class="benefit-icon">📈</div>
+
+                    <div class="benefit-text">
+
+                        <h3>Financial Insights</h3>
+
+                        <p>
+                            Understand your spending patterns.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="benefit">
+
+                    <div class="benefit-icon">🔒</div>
+
+                    <div class="benefit-text">
+
+                        <h3>Secure & Private</h3>
+
+                        <p>
+                            Keep your financial information protected.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="branding-bottom">
+
+                <p>
+                    Start your financial journey with PesaTrack.
+                    Make informed decisions, build better habits
+                    and take charge of your money.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- RIGHT REGISTRATION SECTION -->
+
+        <section class="registration-section">
+
+
+            <div class="registration-header">
+
+                <h2>Create Your Account</h2>
+
+                <p>
+                    Fill in the details below to get started
+                    with PesaTrack.
+                </p>
+
+            </div>
+
+
+
+            <!-- REGISTRATION FORM -->
+
+            <form class="register-form" id="registerForm">
+
+
+                <!-- FULL NAME -->
+
+                <div class="form-group">
+
+                    <label for="fullName">Full Name</label>
+
+                    <div class="input-container">
+
+                        <input
+                            type="text"
+                            id="fullName"
+                            name="fullName"
+                            placeholder="Enter your full name"
+                            autocomplete="name"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- EMAIL -->
+
+                <div class="form-group">
+
+                    <label for="email">Email Address</label>
+
+                    <div class="input-container">
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email address"
+                            autocomplete="email"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PASSWORD -->
+
+                <div class="form-group">
+
+                    <label for="password">Password</label>
+
+                    <div class="input-container">
+
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Create a strong password"
+                            minlength="8"
+                            autocomplete="new-password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            class="toggle-password"
+                            onclick="togglePassword('password', this)"
+                        >
+                            Show
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- CONFIRM PASSWORD -->
+
+                <div class="form-group">
+
+                    <label for="confirmPassword">
+                        Confirm Password
+                    </label>
+
+                    <div class="input-container">
+
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            name="confirmPassword"
+                            placeholder="Confirm your password"
+                            minlength="8"
+                            autocomplete="new-password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            class="toggle-password"
+                            onclick="togglePassword('confirmPassword', this)"
+                        >
+                            Show
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- TERMS AND CONDITIONS -->
+
+                <div class="terms">
+
+                    <input
+                        type="checkbox"
+                        id="terms"
+                        required
+                    >
+
+                    <label for="terms">
+
+                        I agree to the
+
+                        <a href="#">Terms and Conditions</a>
+
+                        and
+
+                        <a href="#">Privacy Policy</a>.
+
+                    </label>
+
+                </div>
+
+
+
+                <!-- CREATE ACCOUNT BUTTON -->
+
+                <button type="submit" class="create-btn">
+
+                    Create Account →
+
+                </button>
+
+
+            </form>
+
+
+
+            <!-- LOGIN REDIRECT -->
+
+            <div class="login-redirect">
+
+                Already have an account?
+
+                <a href="login.html">Login Here</a>
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <p>
+            © 2026 PesaTrack. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        function togglePassword(inputId, button) {
+
+            let input = document.getElementById(inputId);
+
+            if (input.type === "password") {
+
+                input.type = "text";
+
+                button.textContent = "Hide";
+
+            }
+
+            else {
+
+                input.type = "password";
+
+                button.textContent = "Show";
+
+            }
+
+        }
+
+
+        // Basic frontend validation
+
+        document.getElementById("registerForm")
+        .addEventListener("submit", function(e) {
+
+            let password =
+                document.getElementById("password").value;
+
+            let confirmPassword =
+                document.getElementById("confirmPassword").value;
+
+
+            if (password !== confirmPassword) {
+
+                e.preventDefault();
+
+                alert("Passwords do not match!");
+
+                return;
+
+            }
+
+            e.preventDefault();
+
+            alert("Frontend validation successful! Backend registration is not yet connected.");
+
+        });
+
+    </script>
+
+
+</body>
+
+</html>

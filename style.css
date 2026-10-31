@@ -1,0 +1,881 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+       font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(89, 207, 89);
+    position: fixed;
+    padding: 0;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+header img{
+    width: 50px;
+    height: 50px;
+    margin:3px 40px;
+
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    list-style: none;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.5s ease;
+}
+.btnn{
+    margin-right: 40px;
+    background-color: hsl(276, 83%, 16%);
+    border-style: none;
+    color: white;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.btnn:hover{
+     background-color: hsl(276, 81%, 37%);
+}
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px;
+    min-height: 100vh;
+}
+.hero-section img{
+    height: 400px;
+    width: 400px;
+    margin-right: 70px;
+}
+.hero-section p{
+    color: rgb(89, 207, 89);
+    font-size: 36px;
+    margin-left: 40px;
+}
+
+.btn{
+    font-size: 24px;
+    margin-top: 40px;
+    margin-left: 80px;
+    background-color: hsl(276, 83%, 16%);
+    border-style: none;
+    border-radius: 10px;
+    color: #ffffff;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.btn:hover{
+     background-color: hsl(276, 81%, 37%);
+}
+nav ul li a:hover{
+    color: white;
+}
+.howitworks-section{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.howitworks-section h2{
+     color: #6c3ce9;
+      font-size: 2rem;
+    font-weight: 800;
+}
+.howitworks-section .para p{
+    font-size: 26px;
+    line-height: 1.3;
+    color: green;
+}
+.guide-cards{
+    display: flex;
+    flex-direction: row;
+}
+.demo-card i{
+    color: green;
+}
+.demo-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+     height: 400px;
+     width: 200px;
+     border: 1px solid rgb(10, 253, 10);
+     border-radius: 10px;
+     margin: 50px;
+     line-height: 1.7;
+     gap: 30px;
+    background: #d9f3df;
+     box-shadow: 0 8px 25px rgba(66, 42, 120, 0.06);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+
+    position: relative;
+    overflow: hidden;
+}
+.demo-card::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+
+    background: linear-gradient(
+        90deg,
+        #6c3ce9,
+        #a78bfa
+    );
+
+    transform: scaleX(0);
+    transform-origin: left;
+
+    transition: transform 0.3s ease;
+}
+.demo-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #cbbafa;
+
+    box-shadow: 0 18px 40px rgba(108, 60, 233, 0.13);
+}
+
+.demo-card:hover::before {
+    transform: scaleX(1);
+}
+.howitworks-section h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.demo-card > i {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 60px;
+    height: 60px;
+
+    font-size: 1.6rem;
+    color: #26e736;
+
+    background: #f0eaff;
+
+    border-radius: 15px;
+
+    margin-bottom: 24px;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+.demo-card:hover > i {
+   color: #04770d;
+
+    transform: scale(1.08);
+}
+
+.howitworks-section h2::before,
+.howitworks-section h2::after {
+    content: "";
+    display: inline-block;
+    width: 65px;
+    height: 3px;
+    flex-shrink: 0;
+
+    background: linear-gradient(
+        to right,
+        transparent,
+         #11a825
+    );
+
+    border-radius: 10px;
+}
+
+.howitworks-section h2::after {
+    background: linear-gradient(
+        to left,
+        transparent,
+        #11a825
+    );
+}
+
+/* Features section */
+.features-section h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.features-section h2::before,
+.features-section h2::after {
+    content: "";
+    display: inline-block;
+    width: 65px;
+    height: 3px;
+    flex-shrink: 0;
+
+    background: linear-gradient(
+        to right,
+        transparent,
+         #11a825
+    );
+
+    border-radius: 10px;
+}
+
+.features-section h2::after {
+    background: linear-gradient(
+        to left,
+        transparent,
+        #11a825
+    );
+}
+
+@media(max-width: 600px){
+    .howitworks-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .guide-cards{
+        display: flex;
+        justify-content:center;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+@media(max-width: 600px){
+    .hero-section{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        justify-content: center;
+    }
+    .hero-section img{
+        margin: 0 auto;
+
+    }
+    .demo-card{
+        width: 350px;
+        height: 320px;
+    }
+    .guide-cards{
+           gap: 2px;
+    }
+    .hero-section p{
+        font-size: 1.6rem;
+    }
+    .btn{
+        margin-bottom: 30px;
+    }
+}
+
+css
+/* ================================
+   FEATURES SECTION
+================================ */
+
+.features-section {
+    padding: 100px 7%;
+    background: #f8f7ff;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Section Heading */
+
+.features-section h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    font-size: 2rem;
+    font-weight: 800;
+    color: #6c3ce9;
+
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+/* Decorative lines on both sides */
+
+.features-section h2::before,
+.features-section h2::after {
+    content: "";
+    width: 65px;
+    height: 3px;
+
+    background: linear-gradient(
+        to right,
+        transparent,
+        #11a825
+    );
+
+    border-radius: 10px;
+}
+
+.features-section h2::after {
+    background: linear-gradient(
+        to left,
+        transparent,
+        #11a825
+    );
+}
+
+/* Subtitle */
+
+.features-section > p:first-of-type {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #0dda40;
+
+    margin-bottom: 15px;
+    margin-left: 400px;
+}
+
+/* Section Description */
+
+.features-section > p:nth-of-type(2) {
+    max-width: 720px;
+    margin: 0 auto 55px;
+
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #499e4d;
+}
+
+
+/* ================================
+   FEATURE CARDS CONTAINER
+================================ */
+
+.feature-cards {
+    display: grid;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 30px;
+
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+
+/* ================================
+   INDIVIDUAL FEATURE CARD
+================================ */
+
+.feature-internal-card {
+    background: #d9f3df;
+
+    padding: 35px 28px;
+
+    border: 1px solid #11fc57;
+    border-radius: 18px;
+
+    text-align: left;
+
+    box-shadow: 0 8px 25px rgba(66, 42, 120, 0.06);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Small decorative line at the top */
+
+.feature-internal-card::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+
+    background: linear-gradient(
+        90deg,
+        #6c3ce9,
+        #a78bfa
+    );
+
+    transform: scaleX(0);
+    transform-origin: left;
+
+    transition: transform 0.3s ease;
+}
+
+
+/* Card hover effect */
+
+.feature-internal-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #cbbafa;
+
+    box-shadow: 0 18px 40px rgba(108, 60, 233, 0.13);
+}
+
+.feature-internal-card:hover::before {
+    transform: scaleX(1);
+}
+
+
+/* ================================
+   FEATURE ICONS
+================================ */
+
+.feature-internal-card > i {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 60px;
+    height: 60px;
+
+    font-size: 1.6rem;
+    color: #26e736;
+
+    background: #f0eaff;
+
+    border-radius: 15px;
+
+    margin-bottom: 24px;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+/* Icon hover effect */
+
+.feature-internal-card:hover > i {
+   color: #04770d;
+    transform: scale(1.08);
+}
+
+.feature-internal-card h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+
+    color: #0d5510;
+
+    line-height: 1.5;
+
+    margin-bottom: 12px;
+}
+
+.feature-internal-card p {
+    font-size: 0.95rem;
+    line-height: 1.8;
+
+    color: #109c28;
+
+    margin-bottom: 22px;
+}
+
+
+.feature-internal-card ul {
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
+}
+
+.feature-internal-card li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+
+    font-size: 0.9rem;
+    line-height: 1.6;
+
+    color: #090324;
+
+    margin-bottom: 12px;
+}
+
+.feature-internal-card li::before {
+    content: "\f00c";
+
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+
+    font-size: 0.75rem;
+
+    color: #6c3ce9;
+
+    background: #f0eaff;
+
+    width: 20px;
+    height: 20px;
+
+    min-width: 20px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    margin-top: 2px;
+}
+
+
+@media screen and (max-width: 992px) {
+
+    .features-section {
+        padding: 80px 5%;
+    }
+
+    .feature-cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 25px;
+    }
+
+    .features-section > p:first-of-type {
+        font-size: 1.4rem;
+        margin: 0 auto;
+    }
+
+    .feature-internal-card {
+        padding: 30px 24px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .features-section {
+        padding: 65px 6%;
+    }
+
+    .features-section h2 {
+        font-size: 1.45rem;
+        gap: 12px;
+        letter-spacing: 1px;
+    }
+
+    .features-section h2::before,
+    .features-section h2::after {
+        width: 30px;
+    }
+
+    .features-section > p:first-of-type {
+        font-size: 1.2rem;
+        line-height: 1.5;
+    }
+
+    .features-section > p:nth-of-type(2) {
+        font-size: 0.92rem;
+        line-height: 1.7;
+        margin-bottom: 35px;
+    }
+
+    .feature-cards {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .feature-internal-card {
+        padding: 28px 24px;
+    }
+
+    .feature-internal-card h3 {
+        font-size: 1.15rem;
+    }
+
+    .feature-internal-card p {
+        font-size: 0.92rem;
+    }
+
+    .feature-internal-card li {
+        font-size: 0.88rem;
+    }
+}
+/* BENEFITS SECTION */
+
+.benefits-section {
+    width: 100%;
+    padding: 90px 8%;
+}
+
+
+/* SECTION HEADER */
+
+.benefits-header {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 55px;
+}
+
+.benefits-header .section-label {
+    display: inline-block;
+   color: #0dda40;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.benefits-header h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    font-size: 2rem;
+    font-weight: 800;
+    color: #6c3ce9;
+
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+/* Decorative lines on both sides */
+
+.benefits-header
+ h2::before,
+.benefits-header h2::after {
+    content: "";
+    width: 65px;
+    height: 3px;
+
+    background: linear-gradient(
+        to right,
+        transparent,
+        #11a825
+    );
+
+    border-radius: 10px;
+}
+
+.benefits-header h2::after {
+    background: linear-gradient(
+        to left,
+        transparent,
+        #11a825
+    );
+}
+
+
+.benefits-header p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #0dda40;
+}
+
+
+/* BENEFITS CONTAINER */
+
+.benefits-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+
+/* BENEFIT CARDS */
+
+.benefit-card {
+    background: #d9f3df;
+    padding: 35px;
+    border-radius: 12px;
+    border: 1px solid #11fc57;
+     box-shadow: 0 8px 25px rgba(66, 42, 120, 0.06);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+
+    position: relative;
+    overflow: hidden;
+}
+/* .benefit-card::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+
+    background: linear-gradient(
+        90deg,
+        #6c3ce9,
+        #a78bfa
+    );
+} */
+.benefit-card:hover {
+     transform: translateY(-8px);
+
+    border-color: #cbbafa;
+
+    box-shadow: 0 18px 40px rgba(108, 60, 233, 0.13);
+}
+.benefit-card:hover::before {
+    transform: scaleX(1);
+}
+
+
+/* BENEFIT ICONS */
+
+.benefit-icon {
+    width: 55px;
+    height: 55px;
+    background: #f1eaff;
+    color: #26e736;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    font-size: 23px;
+    margin-bottom: 22px;
+     transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+.benefit-icon:hover {
+        color: #04770d;
+    transform: scale(1.08);
+}
+
+.benefit-card h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+
+    color: #0d5510;
+    font-size: 19px;
+    margin-bottom: 13px;
+}
+
+.benefit-card p {
+    color:#605c7a;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* CALL TO ACTION */
+
+.benefits-cta {
+    max-width: 1050px;
+    margin: 65px auto 0;
+    padding: 45px 25px;
+    text-align: center;
+    background: linear-gradient(
+        120deg,
+        #5429b8,
+        #2e1065
+    );
+    border-radius: 15px;
+    color: white;
+}
+
+.benefits-cta h3 {
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+
+.benefits-cta p {
+    font-size: 15px;
+    color: #e4dcfa;
+    margin-bottom: 25px;
+    line-height: 1.7;
+}
+
+.benefits-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: white;
+    color: #5429b8;
+    padding: 13px 25px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.benefits-btn:hover {
+    background: #eee7ff;
+    transform: translateY(-3px);
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+
+    .benefits-section {
+        padding: 70px 5%;
+    }
+
+    .benefits-header h2 {
+        font-size: 27px;
+    }
+
+    .benefits-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .benefit-card {
+        padding: 28px;
+    }
+
+    .benefits-cta {
+        margin-top: 45px;
+        padding: 35px 20px;
+    }
+
+    .benefits-cta h3 {
+        font-size: 23px;
+    }
+
+}
+

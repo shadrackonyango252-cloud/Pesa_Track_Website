@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="login.css">
+</head>
+<header>
+    <img src="logo.png" alt="">
+    <nav>
+        <ul>
+            <li><a href="">Features</a></li>
+            <li><a href="">How it works</a></li>
+            <li><a href="">Benefits</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
+    <button class="btnn" id="backHome">Back to home</button>
+    
+</header>
+<body>
+    <section class="login-section">
+        <div class="left">
+           <img src="logo.png" alt="">
+           <h3>Your Money</h3>
+           <h3>Your Control</h3>
+           <h3>Your Future</h3>
+           <p>Track Your Expenses, Manage Your Badget and Make Smart Financial Decisions</p>
+        </div>
+        <div class="right">
+            <h1>Welcome Back!</h1>
+            <p class="sign">Sign in to your account <br>
+                 to continue Managing your finances</p>
+            <form id="form" action="">
+                <h2>Login</h2>
+                <div class="form-group">
+                <label for="">Email Adress:</label>
+                <input type="email" name="email" id="email">
+                <span id="emailError" class="error"></span>
+                </div>
+                <div class="form-group">
+                <label for="">Password:</label>
+                <input type="password" name="password" id="password">
+                <span id="passwordError" class="error"></span>
+                </div>
+                <button class="create" type="submit">SUBMIT</button>
+                <p class="cond">Dont have Account?</p>
+                <button class="create">Create Account</button>
+            </form>
+        </div>
+    </section>
+   <script>
+
+    let email = document.getElementById("email")
+let password = document.getElementById("password")
+let form = document.getElementById("form")
+
+let emailError = document.getElementById("emailError")
+let passwordError = document.getElementById("passwordError")
+
+
+form.addEventListener('submit', (e) =>{
+    let valid = true
+    e.preventDefault()
+
+    if(email.value === ""){
+        emailError.innerHTML = 'Email is Required'  
+        valid = false
+    }
+    else{
+        emailError.innerHTML = ""
+    }
+
+    if(password.value === ""){
+        passwordError.innerHTML = 'Enter a valid Password'
+        valid = false
+    }
+    else{
+        passwordError.innerHTML = ""
+    }
+    if(valid){
+      window.location.href = "dashboard.html"
+    }
+})
+
+
+   </script>
+    <footer class="footer">
+
+        <p>
+            © 2026 PesaTrack. All Rights Reserved.
+        </p>
+
+    </footer>
+</body>
+</html>

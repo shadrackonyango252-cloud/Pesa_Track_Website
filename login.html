@@ -14,10 +14,8 @@
             <li><a href="">Features</a></li>
             <li><a href="">How it works</a></li>
             <li><a href="">Benefits</a></li>
-            <li><a href="">Contact</a></li>
         </ul>
     </nav>
-    <button class="btnn" id="backHome">Back to home</button>
     
 </header>
 <body>
@@ -47,19 +45,19 @@
                 </div>
                 <button class="create" type="submit">SUBMIT</button>
                 <p class="cond">Dont have Account?</p>
-                <button class="create">Create Account</button>
+                <button class="create" type="button" id="createAccountBtn">Create Account</button>
             </form>
         </div>
     </section>
    <script>
-
-    let email = document.getElementById("email")
+let email = document.getElementById("email")
 let password = document.getElementById("password")
 let form = document.getElementById("form")
 
 let emailError = document.getElementById("emailError")
 let passwordError = document.getElementById("passwordError")
 
+let createAccountBtn = document.getElementById("createAccountBtn")
 
 form.addEventListener('submit', (e) =>{
     let valid = true
@@ -83,6 +81,9 @@ form.addEventListener('submit', (e) =>{
     if(valid){
       window.location.href = "dashboard.html"
     }
+})
+createAccountBtn.addEventListener("click", () => {
+    window.location.href = "createAccount.html"
 })
 
 

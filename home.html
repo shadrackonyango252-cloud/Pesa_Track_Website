@@ -7,19 +7,19 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="style.css">
 </head>
-<header>
+
+<body>
+    <header class="site-header"> 
     <img src="logo.png" alt="">
     <nav>
         <ul>
-            <li><a href="">Features</a></li>
-            <li><a href="">How it works</a></li>
-            <li><a href="">Benefits</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#how-it-works">How it works</a></li>
+            <li><a href="#benefits">Benefits</a></li>
         </ul>
     </nav>
     <button class="btnn" id="log">Login</button>
 </header>
-<body>
     <section class="hero-section">
         <div>
       <p>Take Control Of Your Money<br>
@@ -31,7 +31,7 @@
       <img src="logo.png" alt="">
     </section>
     <hr>
-    <section class="features-section">
+    <section class="features-section" id="features">
         <h2>OUR FEATURES</h2>
         <P>Everything You Need To Manage Your Money</P>
         <p>Pesa track gives you the tool to track your expenses, manage badgets, monitor spending patterns and make smarter financial summaries</p>
@@ -102,7 +102,7 @@
         </div>
     </section>
     <hr>
-    <section class="howitworks-section">
+    <section class="howitworks-section" id="how-it-works">
         <h2>HOW IT WORKS</h2>
         <div class="para">
         <P>Managing Your Account Has Never been easier.</P>
@@ -252,7 +252,7 @@
             management with PesaTrack.
         </p>
 
-        <a href="register.html" class="benefits-btn">
+        <a href="createAccount.html" class="benefits-btn">
             Get Started Today
             <i class="fa-solid fa-arrow-right"></i>
         </a>
@@ -261,6 +261,131 @@
 
 
 </section>
+<!-- ================= FOOTER SECTION ================= -->
+
+<footer class="footer-section">
+
+    <div class="footer-container">
+
+        <!-- COLUMN 1: BRAND INFORMATION -->
+        <div class="footer-brand">
+
+            <div class="footer-logo">
+                <img src="logo.png" alt="PesaTrack Logo">
+                <h2>PesaTrack</h2>
+            </div>
+
+            <p class="footer-description">
+                Take control of your finances. Track your expenses,
+                manage your budgets and make smarter financial decisions
+                with PesaTrack.
+            </p>
+
+        </div>
+
+
+        <!-- COLUMN 2: QUICK LINKS -->
+        <div class="footer-links">
+
+            <h3>Quick Links</h3>
+
+            <ul>
+                <li><a href="home.html">Home</a></li>
+
+                <li><a href="#how-it-works">How It Works</a></li>
+
+                <li><a href="#features">Features</a></li>
+
+                <li><a href="#benefits">Benefits</a></li>
+            </ul>
+
+        </div>
+
+
+        <!-- COLUMN 3: OUR SERVICES -->
+        <div class="footer-services">
+
+            <h3>Account Access</h3>
+
+            <ul>
+                <li><a href="login.html">Login</a></li>
+
+                <li><a href="createAccount.html">Create Account</a></li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- COLUMN 4: SUPPORT -->
+        <div class="footer-support">
+
+            <h3>Support</h3>
+
+            <ul>
+                <li><a href="contact.html">Contact Us</a></li>
+
+                <li><a href="help.html">Help Center</a></li>
+
+                <li><a href="faq.html">FAQs</a></li>
+            </ul>
+
+        </div>
+
+
+        <!-- COLUMN 5: SOCIAL MEDIA -->
+        <div class="footer-social">
+
+            <h3>Follow Us</h3>
+
+            <div class="social-media-links">
+
+                <a href="#" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+
+                <a href="#" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+                <a href="#" aria-label="X">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER BOTTOM SECTION -->
+
+    <div class="footer-bottom">
+
+        <div class="copyright">
+            <p>
+                &copy; 2026 PesaTrack. All Rights Reserved.
+            </p>
+        </div>
+
+        <div class="footer-legal-links">
+
+            <a href="privacy.html">Privacy Policy</a>
+
+            <a href="terms.html">Terms & Conditions</a>
+
+            <a href="cookies.html">Cookie Policy</a>
+
+        </div>
+
+    </div>
+
+</footer>
     <script src="script.js"></script>
 </body>
 </html>

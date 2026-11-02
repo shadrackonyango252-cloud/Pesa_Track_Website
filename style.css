@@ -732,22 +732,7 @@ css
     position: relative;
     overflow: hidden;
 }
-/* .benefit-card::before {
-    content: "";
 
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 4px;
-
-    background: linear-gradient(
-        90deg,
-        #6c3ce9,
-        #a78bfa
-    );
-} */
 .benefit-card:hover {
      transform: translateY(-8px);
 
@@ -878,4 +863,304 @@ css
     }
 
 }
+/* ==========================================
+   PESATRACK FOOTER SECTION
+========================================== */
 
+.footer-section {
+    width: 100%;
+    background-color: #030247;
+    color: #ffffff;
+    padding: 60px 7% 0;
+    margin-top: 80px;
+}
+
+
+/* ==========================================
+   FOOTER MAIN CONTAINER
+========================================== */
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.2fr 1fr 1fr;
+    gap: 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+
+/* ==========================================
+   BRAND INFORMATION
+========================================== */
+
+.footer-brand {
+    max-width: 300px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.footer-logo h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+}
+
+.footer-description {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #c4c5d5;
+    max-width: 280px;
+}
+
+
+/* ==========================================
+   FOOTER HEADINGS
+========================================== */
+
+.footer-container h3 {
+    font-size: 17px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 22px;
+    position: relative;
+}
+
+
+/* Small green line below headings */
+
+.footer-container h3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -9px;
+    width: 30px;
+    height: 3px;
+    background-color: #11a825;
+    border-radius: 5px;
+}
+
+
+/* ==========================================
+   FOOTER LINKS
+========================================== */
+
+.footer-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-container ul li {
+    margin-bottom: 14px;
+}
+
+.footer-container ul li a {
+    text-decoration: none;
+    color: #c4c5d5;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.footer-container ul li a:hover {
+    color: #11a825;
+    transform: translateX(5px);
+}
+
+
+/* ==========================================
+   SOCIAL MEDIA LINKS
+========================================== */
+
+.social-media-links {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.social-media-links a {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+
+    border-radius: 50%;
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+.social-media-links a i {
+    font-size: 17px;
+}
+
+.social-media-links a:hover {
+    background-color: #11a825;
+    color: #ffffff;
+    transform: translateY(-5px);
+}
+
+
+/* ==========================================
+   FOOTER BOTTOM SECTION
+========================================== */
+
+.footer-bottom {
+    max-width: 1400px;
+    margin: 0 auto;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+
+    padding: 25px 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+
+/* COPYRIGHT */
+
+.copyright p {
+    font-size: 13px;
+    color: #aeb0c4;
+    margin: 0;
+}
+
+
+/* LEGAL LINKS */
+
+.footer-legal-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.footer-legal-links a {
+    text-decoration: none;
+    color: #c4c5d5;
+    font-size: 13px;
+    transition: color 0.3s ease;
+}
+
+.footer-legal-links a:hover {
+    color: #11a825;
+}
+
+
+/* ==========================================
+   TABLET RESPONSIVENESS
+========================================== */
+
+@media screen and (max-width: 1024px) {
+
+    .footer-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px 30px;
+    }
+
+    .footer-brand {
+        max-width: 100%;
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE RESPONSIVENESS
+========================================== */
+
+@media screen and (max-width: 768px) {
+
+    .footer-section {
+        padding: 45px 6% 0;
+        margin-top: 60px;
+    }
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px 20px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+
+    .footer-description {
+        max-width: 100%;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding: 25px 0;
+    }
+
+    .footer-legal-links {
+        justify-content: center;
+        gap: 15px;
+    }
+
+}
+
+
+/* ==========================================
+   SMALL MOBILE DEVICES
+========================================== */
+
+@media screen and (max-width: 480px) {
+
+    .footer-section {
+        padding: 40px 5% 0;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer-brand {
+        grid-column: auto;
+    }
+
+    .footer-logo h2 {
+        font-size: 21px;
+    }
+
+    .footer-container h3 {
+        font-size: 16px;
+    }
+
+    .footer-description {
+        font-size: 13px;
+    }
+
+    .footer-container ul li a {
+        font-size: 13px;
+    }
+
+    .footer-legal-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+}

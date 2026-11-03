@@ -395,4 +395,8 @@ nav ul li a{
             .footer {
                 width: 95%;
             }
+            .navbar{
+                display: none;
+            }
+
         }

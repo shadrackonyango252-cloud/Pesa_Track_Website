@@ -6,10 +6,7 @@
     <title>Expense Tracker Website</title>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <header class="site-header"> 
+    <div class="navbar">
     <img src="logo.png" alt="">
     <nav>
         <ul>
@@ -19,7 +16,47 @@
         </ul>
     </nav>
     <button class="btnn" id="log">Login</button>
-</header>
+    </div>
+</head>
+
+<body>
+   
+  <body>
+
+    <!-- NAVIGATION BAR -->
+    <header class="site-header">
+
+        <!-- LOGO -->
+        <a href="index.html" class="logo">
+            <img src="logo.png" alt="PesaTrack Logo">
+        </a>
+
+        <!-- HAMBURGER MENU BUTTON -->
+        <button class="menu-toggle" id="menuToggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="headerMenu">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+        <!-- NAVIGATION LINKS AND LOGIN -->
+        <div class="header-menu" id="headerMenu">
+
+            <nav>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#how-it-works">How it works</a></li>
+                    <li><a href="#benefits">Benefits</a></li>
+                </ul>
+            </nav>
+
+            <button class="btnn" id="log">Login</button>
+
+        </div>
+
+    </header>
     <section class="hero-section">
         <div>
       <p>Take Control Of Your Money<br>

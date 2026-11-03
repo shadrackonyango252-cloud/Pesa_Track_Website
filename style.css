@@ -260,18 +260,47 @@ nav ul li a:hover{
     );
 }
 
-@media(max-width: 600px){
-    .howitworks-section{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+@media screen and (max-width: 480px) {
+
+    .howitworks-section {
+        padding: 40px 15px;
     }
-    .guide-cards{
-        display: flex;
-        justify-content:center;
-        flex-direction: column;
-        width: 100%;
+
+    .howitworks-section h2 {
+        font-size: 22px;
     }
+
+    .howitworks-section .para p {
+        font-size: 13px;
+    }
+
+    .demo-card {
+        padding: 22px 15px;
+        min-height: 210px;
+    }
+
+    .demo-card h3 {
+        font-size: 18px;
+    }
+
+       .guide-cards {
+        grid-template-columns: 1fr;
+        gap:0;
+        flex-direction: column;
+    }
+
+    .demo-card i {
+        font-size: 27px;
+    }
+
+    .demo-card p:first-of-type {
+        font-size: 16px;
+    }
+
+    .demo-card p:last-of-type {
+        font-size: 12px;
+    }
+
 }
 @media(max-width: 600px){
     .hero-section{
@@ -1163,4 +1192,105 @@ css
         gap: 15px;
     }
 
+}
+/* ==============================
+   MOBILE NAVIGATION
+============================== */
+
+@media screen and (max-width: 768px) {
+
+    /* HEADER */
+
+    .site-header {
+        padding: 5px 20px;
+    }
+
+    /* SHOW HAMBURGER BUTTON */
+
+    .menu-toggle {
+        display: block;
+    }
+
+    /* MOBILE MENU CONTAINER */
+
+    .header-menu {
+        display: none;
+
+        position: absolute;
+
+        top: 100%;
+        left: 0;
+
+        width: 100%;
+
+        background-color: rgb(89, 207, 89);
+
+        flex-direction: column;
+        align-items: center;
+
+        gap: 25px;
+
+        padding: 25px 20px;
+
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    /* SHOW MENU WHEN ACTIVE */
+
+    .header-menu.active {
+        display: flex;
+          height: calc(100vh - 100px);
+         padding: 40px;
+
+    }
+
+    /* STACK NAVIGATION LINKS */
+
+    .header-menu nav {
+        width: 100%;
+      
+    }
+
+    .header-menu nav ul {
+        display: flex;
+
+        flex-direction: column;
+        align-items: center;
+
+        gap: 25px;
+
+        border: none;
+        padding: 10px;
+
+        width: 100%;
+    }
+
+    /* MOBILE LINKS */
+
+    .header-menu nav ul li a {
+        font-size: 17px;
+    }
+
+    /* MOBILE LOGIN BUTTON */
+
+    .btnn {
+        width: 120px;
+        padding: 10px;
+    }
+    .navbar{
+        display: none;
+    }
+    .hero-section{
+        margin: 0;
+    }
+    .hero-section img{
+        padding-bottom: 0;
+    }
+
+}
+@media screen and (min-width: 800px){
+    nav ul li a{
+        display: none;
+    }
+    
 }

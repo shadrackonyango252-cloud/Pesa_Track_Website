@@ -296,6 +296,14 @@ nav ul li a:hover{
         min-height: auto;
         padding: 30px;
         border-radius: 18px;
+        margin-top: 10px;
+    }
+      .navbar{
+        display: none;
+    }
+
+    .login-section{
+        margin-top: 0;
     }
 
     .left img {
@@ -326,4 +334,10 @@ nav ul li a:hover{
     .right form {
         padding: 25px;
     }
+     .left{
+        margin-top: 1px;
+    }
+}
+@media(max-width: 768px){
+  
 }

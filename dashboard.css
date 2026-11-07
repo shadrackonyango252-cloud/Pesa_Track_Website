@@ -2078,4 +2078,22 @@ select {
         flex-direction: column;
     }
 }
-
+@media (max-width: 650px){
+    .user-profile{
+        display: none;
+    }
+    .sidebar-navigation{
+        display: none;
+    }
+    .sidebar-help{
+        display: none;
+    }
+   
+    .sidebar-logout{
+        display: none;
+    }
+     .menu-toggle{
+        margin-left: 150px;
+        cursor: pointer;
+     }
+}

@@ -1292,5 +1292,19 @@ css
     nav ul li a{
         display: none;
     }
-    
+    .navbar img{
+   display: none;
+}
+    .menu-toggle{
+        display: none;
+    }
+    .header-menu{
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+    .header-menu nav ul li a{
+        display: flex;
+        
+    }
 }

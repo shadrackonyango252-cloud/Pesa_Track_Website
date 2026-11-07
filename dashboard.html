@@ -35,6 +35,14 @@
                 </div>
 
                 <h2>Pesa<span>Track</span></h2>
+             <button class="menu-toggle" id="menuToggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="headerMenu">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
 
             </div>
 
@@ -149,36 +157,6 @@
              RIGHT MAIN CONTENT AREA
         ================================== -->
         <main class="main-content">
-
-
-            <!-- TOP NAVIGATION BAR -->
-            <header class="dashboard-header">
-
-                <nav class="dashboard-navbar">
-
-                    <ul class="navbar-links">
-
-                        <li>
-                            <a href="#features">Features</a>
-                        </li>
-
-                        <li>
-                            <a href="#how-it-works">How it works</a>
-                        </li>
-
-                        <li>
-                            <a href="#benefits">Benefits</a>
-                        </li>
-
-                        <li>
-                            <a href="#contact">Contact</a>
-                        </li>
-
-                    </ul>
-
-                </nav>
-
-            </header>
 
 
 
@@ -1033,6 +1011,56 @@
         </p>
 
     </footer>
+      <script>
+  
+  
+let menuToggle = document.getElementById("menuToggle");
+let headerMenu = document.getElementById("headerMenu");
+
+
+// OPEN AND CLOSE MOBILE MENU
+
+menuToggle.addEventListener("click", () => {
+
+    headerMenu.classList.toggle("active");
+
+    let isOpen = headerMenu.classList.contains("active");
+
+    menuToggle.setAttribute("aria-expanded", isOpen);
+
+    // CHANGE HAMBURGER ICON
+
+    if (isOpen) {
+
+        menuToggle.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+
+    } else {
+
+        menuToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
+
+    }
+
+});
+
+
+// CLOSE MENU AFTER CLICKING A NAVIGATION LINK
+
+let navLinks = document.querySelectorAll(".header-menu nav a");
+
+navLinks.forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        headerMenu.classList.remove("active");
+
+        menuToggle.setAttribute("aria-expanded", "false");
+
+        menuToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
+
+    });
+
+});
+  </script>
 </body>
 
 </html>

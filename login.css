@@ -338,6 +338,10 @@ nav ul li a:hover{
         margin-top: 1px;
     }
 }
-@media(max-width: 768px){
-  
+@media(min-width: 800px){
+   .navbar{
+    display: flex;
+    flex-direction: row;
+    gap: 300px;
+   }
 }
